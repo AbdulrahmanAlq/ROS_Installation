@@ -37,3 +37,21 @@ Second is installing Ubuntu and here is the steps on how to install it :
  16-It will take some time to install and when it done installing restart the VOS and you done! Congrats.
  
  To install ROS follow the guide in https://wiki.ros.org/noetic/Installation/Ubuntu to install ROS neotic, it very easy if you follow the guide step by step it will not take much time to do it.
+
+
+How to install ROS Melodic on Jetson Nano
+
+1- Open new Terminal and copy paste the following command: (sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list')
+
+2- Update the package list: (sudo apt update)
+
+3- Then type: (sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654) After you type the command and press Enter, press Y and hit Enter when asked if you want to continue. It will take a while to download all this stuff, so feel free to take a break while ROS downloads to your system.
+
+4-Type:(sudo apt-get update) then type:(sudo apt install ros-melodic-desktop-full) Type Y and press Enter to complete the installation.
+
+5-Set up the environment variables: (echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc) then (source ~/.bashrc) Note that anytime you want to see what environment variables ROS is using, you can type the following command: (export | grep ROS)
+
+6-Install some other tools that you will work with in ROS. After you type the command below, press Y and Enter to complete the download process: (sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential) Press Y and hit
+Enter.
+
+7-Now initialize rosdep. This is a tool that is required before you can use ROS (sudo apt install python-rosdep) > (sudo rosdep init) > (rosdep update) The last stage of installation is presented here. Verify the ROS version you have installed. You have successfully installed ROS if you see your ROS version in the output: (rosversion -d)
