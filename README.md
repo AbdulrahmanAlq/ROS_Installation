@@ -36,7 +36,7 @@ Second is installing Ubuntu and here is the steps on how to install it :
  
  16-It will take some time to install and when it done installing restart the VOS and you done! Congrats.
  
- To install ROS follow the guide in https://wiki.ros.org/noetic/Installation/Ubuntu to install ROS neotic, it very easy if you follow the guide step by step it will not take much time to do it.
+ To install ROS follow the guide in https://wiki.ros.org/noetic/Installation/Ubuntu to install ROS noetic, it very easy if you follow the guide step by step it will not take much time to do it.
 
 
 How to install ROS Melodic on Jetson Nano
